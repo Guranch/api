@@ -4,7 +4,7 @@ const pokemonImgContainer =document.querySelector('.img-container');
 const pokemonId = document.querySelector('.pokemonid');
 const pokemonTypes =document.querySelector('.pokemontypes');
 const pokemonStats = document.querySelector('.pokemonstats');
-const Form=document.querySelector('.form');
+
 const typeColors = {
     electric: '#FFEA70',
     normal: '#B09398',
@@ -78,4 +78,3 @@ const renderNotFound = () => {
     pokemonStats.innerHTML = '';
     pokemonId.textContent = '';
 }
-Form.addEventListener('submit', searchPokemon(event));
